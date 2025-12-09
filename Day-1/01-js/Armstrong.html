@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- To find Armstrong Number between two given number -->
+
+    <script>
+    const low = Number(prompt('Enter lower number : '));
+const high = Number(prompt("Enter higher number"));
+
+console.log(`Armstrong numbers between ${low} and ${high}:`);
+
+for(let num = low; num <= high; num++){
+    const digits = num.toString().split("");
+    let sum = 0;
+    
+    for(let d of digits){
+        sum += Math.pow(Number(d), digits.length);
+    }
+    
+    if(sum === num){
+        console.log(num);  // Just print the number, or you can add description
+    }
+}
+    </script>
+</body>
+</html>

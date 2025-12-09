@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Take in two numbers and an operator (+, -, *, /) and calculate the value. (Use if conditions) -->
+    <script>
+        const num1 = Number(prompt("Enter a first number"));
+        const num2 = Number(prompt("Enter second number"));
+        const op = (prompt("Please enter (+,-,*,/)"));
+
+        if (op === "+") {
+            alert(num1 + num2);
+        } else if (op === "-") {
+            alert(num1 - num2)
+        } else if (op === "*") {
+            alert(num1 * num2)
+        } else if (op === "/") {
+            alert(num1 / num2)
+        } else {
+            alter("Invalid operator")
+        }
+    </script>
+</body>
+
+</html>
